@@ -3,15 +3,14 @@
 # Run it from the root directory of the Discrover package.
 # It uses the current branch to generate a source archive.
 
+DIR=$( cd "$( dirname "$0" )" && pwd )/..
 export VERSION=`git describe | sed -e "s/-/./g"`
 echo $VERSION
 
-ruby scripts/make-source-release.rb packages/deb/discrover_$VERSION.tar.gz
+ruby scripts/make-source-release.rb $DIR/deb/discrover_$VERSION.tar.gz
 
-cp packages/deb/discrover_$VERSION.tar.gz packages/deb/discrover_$VERSION.orig.tar.gz
-
-cd packages/deb
-
+cd $DIR/deb
+cp discrover_$VERSION.tar.gz discrover_$VERSION.orig.tar.gz
 tar xf discrover_$VERSION.orig.tar.gz 
 
 # the debian directory contains some necessary files
