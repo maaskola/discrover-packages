@@ -1,5 +1,5 @@
 Name:		discrover
-Version:	1.0.0.0
+Version:	1.0.1
 Release:	1%{?dist}
 Summary:	Binding site pattern discovery from nucleic acid sequences by discriminative learning of hidden Markov models
 
@@ -7,7 +7,6 @@ Summary:	Binding site pattern discovery from nucleic acid sequences by discrimin
 License:	GPLv3+
 URL:		https://github.com/maaskola/discrover
 Source0:	%{name}-%{version}.tar.gz
-Patch0:		discrover.no-git-dotdir-in-release.patch
 
 BuildRequires:	gcc-c++ cmake ctags git boost-devel texlive-collection-latexextra
 Requires:	ImageMagick boost
