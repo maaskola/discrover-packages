@@ -1,0 +1,16 @@
+--- CMakeLists.txt.orig	2014-11-21 03:55:03.032051153 +0100
++++ CMakeLists.txt	2014-11-21 03:58:16.045748470 +0100
+@@ -130,10 +130,9 @@
+ 
+ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS} -std=c++11")
+ 
+-INCLUDE(GetGitRevisionDescription)
+-get_git_head_revision(GIT_REFSPEC GIT_SHA1)
+-git_describe(GIT_DESCRIPTION)
+-git_branch(GIT_BRANCH)
++SET(GIT_SHA1 "")
++SET(GIT_DESCRIPTION "1.0.0.0")
++SET(GIT_BRANCH "release")
+ 
+ 
+ IF(CTAGS_FOUND)
