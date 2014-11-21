@@ -2,7 +2,7 @@ Here you will find routines to generate [Discrover](https://github.com/maaskola/
 
 Linux distributions for which package generation routines are currently available include:
 
- * Debian
- * Gentoo
- * Fedora
+ * [Debian](https://www.debian.org/)
+ * [Gentoo](https://www.gentoo.org/)
+ * [Fedora](https://fedoraproject.org/)
 
