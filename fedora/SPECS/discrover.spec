@@ -1,5 +1,5 @@
 Name:		discrover
-Version:	1.0.1
+Version:	1.1.1
 Release:	1%{?dist}
 Summary:	Binding site pattern discovery from nucleic acid sequences by discriminative learning of hidden Markov models
 
