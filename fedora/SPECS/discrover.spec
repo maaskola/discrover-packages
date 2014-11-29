@@ -1,5 +1,5 @@
 Name:		discrover
-Version:	1.1.1
+Version:	1.1.2
 Release:	1%{?dist}
 Summary:	Binding site pattern discovery from nucleic acid sequences by discriminative learning of hidden Markov models
 
@@ -8,8 +8,8 @@ License:	GPLv3+
 URL:		https://github.com/maaskola/discrover
 Source0:	%{name}-%{version}.tar.gz
 
-BuildRequires:	gcc-c++ cmake ctags git boost-devel texlive-collection-latexextra
-Requires:	ImageMagick boost
+BuildRequires:	gcc-c++ cmake ctags git boost-devel texlive-collection-latexextra ruby ruby-devel
+Requires:	ImageMagick boost ruby texlive-latex-bin texlive-pgf
 
 %description
 
@@ -34,10 +34,7 @@ make %{?_smp_mflags}
 /usr/bin/dinucleotide_shuffle
 /usr/bin/discrover
 /usr/bin/hmm.rb
-/usr/bin/hmm2meme
 /usr/bin/plasma
-/usr/bin/reldistplot.r
-/usr/bin/sl
 /usr/bin/tikzlogo
 /usr/lib/libdiscrover.so
 /usr/lib/libdiscroverplasma.so
