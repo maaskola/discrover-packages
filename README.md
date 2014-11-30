@@ -6,3 +6,5 @@ Linux distributions for which package generation routines are currently availabl
  * [Gentoo](https://www.gentoo.org/)
  * [Fedora](https://fedoraproject.org/)
 
+Note that the Gentoo ebuilds are also contained in [my fork](https://github.com/maaskola/sci) of the [gentoo-science overlay](https://github.com/gentoo-science/sci).
+I'm currently trying to get the changes in my fork to be included upstream (see [this pull request](https://github.com/gentoo-science/sci/pull/297)).
