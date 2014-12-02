@@ -8,5 +8,10 @@ Linux distributions for which package generation routines are currently availabl
  * [Fedora](https://fedoraproject.org/)
  * [Ubuntu](https://www.ubuntu.com/)
 
-Note that the Gentoo ebuilds are also contained in [my fork](https://github.com/maaskola/sci) of the [gentoo-science overlay](https://github.com/gentoo-science/sci).
-I'm currently trying to get the changes in my fork to be included upstream (see [this pull request](https://github.com/gentoo-science/sci/pull/297)).
+Note that the Gentoo ebuilds are also contained in the [gentoo-science overlay](https://github.com/gentoo-science/sci).
+You can add this overlay, accept unstable versions of Discrover, and emerge it with the following commands:
+```sh
+layman -a science
+echo "=sci-biology/discrover-X.Y.Z ~amd64" >> /etc/portage/package.keywords
+emerge -av discrover
+```
