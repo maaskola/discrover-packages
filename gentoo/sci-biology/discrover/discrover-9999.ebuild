@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -12,25 +12,38 @@ EGIT_REPO_URI="https://github.com/maaskola/${PN}"
 LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="dreme doc +logo +rmathlib misc_scripts tcmalloc"
+IUSE="dreme doc +logo misc_scripts +rmathlib tcmalloc"
 
 RDEPEND="
 	dev-libs/boost
 	dreme? ( sci-biology/meme )
-	logo? ( dev-lang/ruby dev-texlive/texlive-latex dev-tex/pgf dev-tex/xcolor media-gfx/imagemagick )
+	logo? (
+		dev-lang/ruby
+		dev-texlive/texlive-latex
+		dev-tex/pgf
+		dev-tex/xcolor
+		media-gfx/imagemagick
+	)
 	misc_scripts? ( dev-lang/ruby )
 	rmathlib? ( dev-lang/R )
 	tcmalloc? ( dev-util/google-perftools )
 "
 DEPEND="${RDEPEND}
-	doc? ( dev-texlive/texlive-latex dev-texlive/texlive-latexextra dev-texlive/texlive-latexrecommended media-gfx/imagemagick )
+	doc? (
+		dev-texlive/texlive-latex
+		dev-texlive/texlive-latexextra
+		dev-texlive/texlive-latexrecommended
+		media-gfx/imagemagick
+	)
 "
 src_configure() {
 	local mycmakeargs=(
-		$(cmake-utils_use_with rmathlib RMATHLIB)
 		$(cmake-utils_use_with dreme DREME)
-		$(cmake-utils_use_with tcmalloc TCMALLOC)
 		$(cmake-utils_use_with doc DOC)
+		$(cmake-utils_use_with logo LOGO)
+		$(cmake-utils_use_with misc_scripts MISC_SCRIPTS)
+		$(cmake-utils_use_with rmathlib RMATHLIB)
+		$(cmake-utils_use_with tcmalloc TCMALLOC)
 	)
 
 	unset R_HOME
