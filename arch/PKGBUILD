@@ -1,6 +1,3 @@
-# NOTE: Please fill out the license field for your package! If it is unknown,
-# then please put 'unknown'.
-
 # Maintainer: Jonas Maaskola <jonas@maaskola.de>
 pkgname=discrover
 pkgver=1.1.2
