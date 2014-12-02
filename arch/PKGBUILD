@@ -26,13 +26,10 @@ md5sums=('9a4d7ac1722167b33ab7989a8ac3ab47')
 build() {
 	cd "$srcdir/$pkgname-$pkgver"
         cmake -DCMAKE_INSTALL_PREFIX=/usr .
-#	./configure --prefix=/usr
 	make
 }
 
 package() {
 	cd "$srcdir/$pkgname-$pkgver"
-#        make -C $pkgdir/" install
-#        make -C $pkgname install
 	make DESTDIR="$pkgdir/" install
 }
