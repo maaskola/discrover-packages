@@ -1,5 +1,5 @@
 Name:		discrover
-Version:	1.2.0
+Version:	1.3.0
 Release:	1%{?dist}
 Summary:	Binding site pattern discovery from nucleic acid sequences by discriminative learning of hidden Markov models
 
@@ -9,7 +9,7 @@ URL:		https://github.com/maaskola/discrover
 Source0:	%{name}-%{version}.tar.gz
 
 BuildRequires:	gcc-c++ cmake ctags git boost-devel texlive-collection-latexextra ruby ruby-devel
-Requires:	ImageMagick boost ruby texlive-latex-bin texlive-pgf
+Requires:	ImageMagick boost ruby texlive-latex-bin texlive-pgf texlive-xcolor
 
 %description
 
