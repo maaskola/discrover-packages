@@ -8,7 +8,6 @@ url="https://github.com/maaskola/discrover"
 license=('GPL3')
 depends=('boost' 'texlive-core' 'imagemagick' 'ruby')
 makedepends=('cmake' 'gcc' 'boost' 'texlive-latexextra')
-options=('strip' 'docs' '!libtool' '!staticlibs') # these are default values, so could be left just empty
 changelog=
 source=(https://github.com/maaskola/discrover/archive/$pkgver.tar.gz)
 md5sums=('1a6d5ab836dd920b2ff5a74b86bdc130')
