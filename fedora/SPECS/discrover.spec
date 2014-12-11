@@ -9,7 +9,7 @@ URL:		https://github.com/maaskola/discrover
 Source0:	%{name}-%{version}.tar.gz
 
 BuildRequires:	gcc-c++ cmake ctags git boost-devel texlive-collection-latexextra ruby ruby-devel
-Requires:	ImageMagick boost ruby texlive-latex-bin texlive-pgf texlive-xcolor
+Requires:	ImageMagick boost ruby texlive-latex-bin texlive-pgf texlive-xcolor texlive-standalone
 
 %description
 
