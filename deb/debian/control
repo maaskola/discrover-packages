@@ -9,6 +9,6 @@ Vcs-Browser: https://github.com/maaskola/discrover
 
 Package: discrover
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby, texlive-latex-base, latex-xcolor, pgf
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby, texlive-latex-base, texlive-latex-extra, latex-xcolor, pgf,
 Description: Discrover
   Binding site pattern discovery from nucleic acid sequences by discriminative learning of hidden Markov models
