@@ -2,7 +2,7 @@
 
 First, you need to [prepare your system](https://fedoraproject.org/wiki/How_to_create_an_RPM_package#Preparing_your_system) for creating RPM packages.
 
-Then, you want to place a copy of the [SPEC file](https://github.com/maaskola/discrover-packages/blob/master/fedora/SPECS/discrover.spec) into the SPECS directory created in the above step.
+Then, you want to place a copy of the [SPEC file](https://github.com/maaskola/discrover-packages/raw/master/fedora/SPECS/discrover.spec) into the SPECS directory created in the above step.
 
 You can use ``spectool`` to retrieve the source code specified in the SPEC file: ``spectool -g SPECS/discrover.spec -C SOURCES/``.
 
