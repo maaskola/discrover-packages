@@ -5,7 +5,7 @@ Summary:	Binding site pattern discovery from nucleic acid sequences by discrimin
 
 License:	GPLv3+
 URL:		https://github.com/maaskola/discrover
-Source0:	%{name}-%{version}.tar.gz
+Source:	https://github.com/maaskola/discrover/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:	gcc-c++ cmake ctags git boost-devel texlive-collection-latexextra ruby ruby-devel
 Requires:	ImageMagick boost ruby texlive-latex-bin texlive-pgf texlive-xcolor texlive-standalone
