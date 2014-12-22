@@ -7,7 +7,7 @@ License:	GPLv3+
 URL:		https://github.com/maaskola/discrover
 Source:	https://github.com/maaskola/discrover/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:	gcc-c++ cmake ctags git boost-devel texlive-collection-latexextra ruby ruby-devel
+BuildRequires:	gcc-c++ cmake git boost-devel texlive-collection-latexextra ruby ruby-devel
 Requires:	ImageMagick boost ruby texlive-latex-bin texlive-pgf texlive-xcolor texlive-standalone
 
 %description
