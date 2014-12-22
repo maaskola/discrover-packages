@@ -30,21 +30,9 @@ make %{?_smp_mflags}
 
 %files
 %doc
-/usr/bin/dinucleotide_shuffle
-/usr/bin/discrover
-/usr/bin/hmm.rb
-/usr/bin/plasma
-/usr/bin/tikzlogo
-/usr/lib/libdiscrover.so
-/usr/lib/libdiscroverplasma.so
-/usr/lib/libdiscrovershuffle.so
-/usr/lib/libdiscroverstats.so
-/usr/share/doc/discrover/AUTHORS
-/usr/share/doc/discrover/COPYING
-/usr/share/doc/discrover/FAQ
-/usr/share/doc/discrover/README.md
-/usr/share/doc/discrover/TODO
-/usr/share/doc/discrover/discrover-manual.pdf
+%{_bindir}/*
+%{_libdir}/*.so
+%{_defaultdocdir}/%{name}/*
 
 %post -p /sbin/ldconfig
 
