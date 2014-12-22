@@ -4,7 +4,7 @@ First, you need to [prepare your system](https://fedoraproject.org/wiki/How_to_c
 
 Then, you want to place a copy of the [SPEC file](https://github.com/maaskola/discrover-packages/blob/master/fedora/SPECS/discrover.spec) into the SPECS directory created in the above step.
 
-You can use spectool to retrieve the source code specified in the SPEC file: ``spectool -g SPECS/discrover.spec -C SOURCES/``.
+You can use ``spectool`` to retrieve the source code specified in the SPEC file: ``spectool -g SPECS/discrover.spec -C SOURCES/``.
 
 Finally, with ``rpmbuild -ba SPECS/discrover.spec`` you can proceed to build an RPM of Discrover.
 
