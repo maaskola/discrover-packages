@@ -4,7 +4,7 @@ Section: science
 Priority: optional
 Standards-Version: 3.9.5
 Build-Depends: debhelper (>= 9), cmake, g++, libboost-all-dev, texlive, texlive-latex-extra, libcairo2-dev
-Vcs-Git: git@github.com:maaskola/discrover
+Vcs-Git: git://github.com/maaskola/discrover.git
 Vcs-Browser: https://github.com/maaskola/discrover
 
 Package: discrover
