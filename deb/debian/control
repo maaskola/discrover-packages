@@ -11,3 +11,15 @@ Package: discrover
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Discriminative discovery of sequence motifs with hidden Markov models
+ Motif discovery is the problem of unraveling motifs recognized by a given
+ nucleic acid binding protein from sequences known to harbor occurrences of the
+ motif.  It is a classical problem of bioinformatics, and the Discrover package
+ offers methods to perform motif discovery by contrasting sets of sequences
+ against each other. In other words, it allows to discover motifs that are
+ discriminative between the sets of sequences, i.e. that occur frequently in one
+ set of sequences, but infrequently in the other.
+ .
+ The method is described in an open-access publication:
+ Jonas Maaskola and Nikolaus Rajewsky. Binding site discovery from nucleic acid
+ sequences by discriminative learning of hidden Markov models.
+ Nucleic Acid Research, 42(21):12995-13011, Dec 2014. doi:10.1093/nar/gku1083
