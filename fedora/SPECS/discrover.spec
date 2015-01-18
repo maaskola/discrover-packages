@@ -32,6 +32,7 @@ make %{?_smp_mflags}
 
 
 %install
+cd build
 %make_install
 
 
