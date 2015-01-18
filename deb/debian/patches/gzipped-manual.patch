@@ -1,0 +1,13 @@
+Debian and Ubuntu install a .gzipped version of the manual
+Index: discrover-1.5.0/src/discrover_paths.hpp.in
+===================================================================
+--- discrover-1.5.0.orig/src/discrover_paths.hpp.in	2015-01-18 14:19:21.000000000 +0100
++++ discrover-1.5.0/src/discrover_paths.hpp.in	2015-01-18 18:00:03.302171836 +0100
+@@ -1,6 +1,6 @@
+ #ifndef DISCROVER_PATHS_HPP
+ #define DISCROVER_PATHS_HPP
+ 
+-#define DISCROVER_MANUAL_PATH "@CMAKE_INSTALL_PREFIX@/share/doc/discrover/discrover-manual.pdf"
++#define DISCROVER_MANUAL_PATH "@CMAKE_INSTALL_PREFIX@/share/doc/discrover/discrover-manual.pdf.gz"
+ 
+ #endif
