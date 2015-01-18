@@ -1,5 +1,5 @@
 Name:		discrover
-Version:	1.4.1
+Version:	1.5.0
 Release:	1%{?dist}
 Summary:	Discriminative motif finder
 
