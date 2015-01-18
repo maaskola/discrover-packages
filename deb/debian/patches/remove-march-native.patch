@@ -1,0 +1,12 @@
+Remove -march=native so that binaries also work on other CPUs
+Index: discrover-1.5.0/src/CMakeLists.txt
+===================================================================
+--- discrover-1.5.0.orig/src/CMakeLists.txt	2015-01-18 14:19:21.000000000 +0100
++++ discrover-1.5.0/src/CMakeLists.txt	2015-01-18 19:15:47.634175319 +0100
+@@ -1,5 +1,5 @@
+ # add definitions, compiler switches, etc.
+-ADD_DEFINITIONS(-Wall -funroll-loops -march=native -Wno-unused-local-typedefs)
++ADD_DEFINITIONS(-Wall -funroll-loops -Wno-unused-local-typedefs)
+ 
+ # Allow to #include <discrover_config.hpp>, if doing out-of-source build.
+ INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
