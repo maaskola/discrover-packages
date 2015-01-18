@@ -25,7 +25,9 @@ Nucleic Acid Research, 42(21):12995-13011, Dec 2014. doi:10.1093/nar/gku1083
 
 
 %build
-%cmake .
+mkdir build
+cd build
+%cmake ..
 make %{?_smp_mflags}
 
 
