@@ -1,0 +1,13 @@
+Debian and Ubuntu install a .gzipped version of the manual
+Index: discrover-1.5.0/CMakeLists.txt
+===================================================================
+--- discrover-1.5.0.orig/CMakeLists.txt.orig	2015-01-23 22:59:57.440873099 +0100
++++ discrover-1.5.0/CMakeLists.txt	2015-01-23 23:00:03.692873404 +0100
+@@ -315,6 +315,6 @@
+ 
+ ADD_SUBDIRECTORY(man)
+ 
+-INSTALL(FILES README.md COPYING FAQ TODO AUTHORS
++INSTALL(FILES README.md FAQ TODO AUTHORS
+   DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/${PROJECT_NAME}"
+   )

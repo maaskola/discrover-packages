@@ -1,2 +1,3 @@
 gzipped-manual.patch
 remove-march-native.patch
+dont-install-copying.path
