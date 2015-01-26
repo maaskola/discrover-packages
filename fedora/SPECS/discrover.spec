@@ -41,6 +41,7 @@ cd build
 %{_bindir}/*
 %{_libdir}/*
 %{_defaultdocdir}/%{name}
+%{_mandir}/man1/*
 
 %post -p /sbin/ldconfig
 
