@@ -1,12 +1,11 @@
 Name:		discrover
-Version:	1.5.0
+Version:	1.5.1
 Release:	1%{?dist}
 Summary:	Discriminative motif finder
 
 License:	GPLv3+
 URL:		https://github.com/maaskola/discrover
 Source:	https://github.com/maaskola/discrover/archive/%{version}/%{name}-%{version}.tar.gz
-Patch0:	discrover-remove_march_native.patch
 
 BuildRequires:	gcc-c++ cmake git boost-devel texlive-collection-latexextra cairo-devel
 Requires:	boost cairo
@@ -22,7 +21,7 @@ Nucleic Acid Research, 42(21):12995-13011, Dec 2014. doi:10.1093/nar/gku1083
 
 
 %prep
-%autosetup -p0
+%autosetup
 
 
 %build
