@@ -49,6 +49,7 @@ src_configure() {
 		$(cmake-utils_use_with misc_scripts MISC_SCRIPTS)
 		$(cmake-utils_use_with rmathlib RMATHLIB)
 		$(cmake-utils_use_with tcmalloc TCMALLOC)
+		-DDOC_DIR=/usr/share/doc/${PF}
 	)
 
 	unset R_HOME
