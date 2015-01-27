@@ -3,7 +3,7 @@
 # $Header: $
 
 EAPI=5
-inherit cmake-utils git-2
+inherit cmake-utils git-r3
 
 DESCRIPTION="A sequence motif discovery tool that uses discriminative learning"
 HOMEPAGE="https://github.com/maaskola/discrover"
