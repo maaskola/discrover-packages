@@ -39,6 +39,15 @@ DEPEND="${RDEPEND}
 	)
 	lto? ( >=sys-devel/gcc-4.8 )
 "
+pkg_pretend() {
+	if use lto; then
+		if [[ $(gcc-major-version) -lt 4 ]] || ( [[ $(gcc-major-version) -eq 4 && $(gcc-minor-version) -lt 8 ]] ) ; then
+			eerror "Compilation with link-time optimization and GCC older than 4.8 is not supported."
+			eerror "Please either disable the USE flag 'lto' or use >=sys-devel/gcc-4.8."
+			die "Compiling with USE flag LTO is not supported with <sys-devel/gcc-4.8"
+		fi
+	fi
+}
 src_configure() {
 	local mycmakeargs=(
 		$(cmake-utils_use_with cairo CAIRO)
