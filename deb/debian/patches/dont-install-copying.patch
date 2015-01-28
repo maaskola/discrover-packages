@@ -1,0 +1,12 @@
+Do not install the copy of the GNU General Public License
+Index: discrover-1.5.2/CMakeLists.txt
+===================================================================
+--- discrover-1.5.2.orig/CMakeLists.txt
++++ discrover-1.5.2/CMakeLists.txt
+@@ -320,5 +320,5 @@ ENDIF()
+ 
+ ADD_SUBDIRECTORY(man)
+ 
+-INSTALL(FILES README.md COPYING FAQ TODO AUTHORS
++INSTALL(FILES README.md FAQ TODO AUTHORS
+   DESTINATION "${DOC_DIR}")
