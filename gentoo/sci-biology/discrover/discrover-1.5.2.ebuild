@@ -44,7 +44,7 @@ pkg_pretend() {
 		if [[ $(gcc-major-version) -lt 4 ]] || ( [[ $(gcc-major-version) -eq 4 && $(gcc-minor-version) -lt 8 ]] ) ; then
 			eerror "Compilation with link-time optimization and GCC older than 4.8 is not supported."
 			eerror "Please either disable the USE flag 'lto' or use >=sys-devel/gcc-4.8."
-			die "Compiling with USE flag LTO is not supported with <sys-devel/gcc-4.8"
+			die "Compiling with USE flag 'lto' is not supported with <sys-devel/gcc-4.8."
 		fi
 	fi
 }
@@ -58,7 +58,7 @@ src_configure() {
 		$(cmake-utils_use_with misc_scripts MISC_SCRIPTS)
 		$(cmake-utils_use_with rmathlib RMATHLIB)
 		$(cmake-utils_use_with tcmalloc TCMALLOC)
-		-DDOC_DIR=/usr/share/doc/${PF}
+		-DDOC_DIR="${EPREFIX}${PREFIX}/share/doc/${PF}"
 	)
 
 	unset R_HOME
