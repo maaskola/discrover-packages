@@ -17,7 +17,7 @@ export VERSION=`git describe | sed -e "s/-/./g"`
 echo $VERSION
 export PACKAGE_VERSION=$VERSION-$1
 
-ruby scripts/make-source-release.rb $DIR/deb/discrover_$VERSION.tar.gz
+ruby $DIR/scripts/make-source-release.rb $DIR/deb/discrover_$VERSION.tar.gz
 
 cd $DIR/deb
 cp discrover_$VERSION.tar.gz discrover_$VERSION.orig.tar.gz
