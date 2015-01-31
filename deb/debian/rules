@@ -1,6 +1,5 @@
 #!/usr/bin/make -f
-CFLAGS+=$(CPPFLAGS)
-CXXFLAGS+=$(CPPFLAGS)
+export DEB_CXXFLAGS_MAINT_APPEND  = -mtune=generic
 
 %:
 	dh $@

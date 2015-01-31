@@ -1,14 +1,14 @@
 Debian and Ubuntu install a .gzipped version of the manual
 Index: discrover-1.5.0/CMakeLists.txt
 ===================================================================
---- discrover-1.5.0.orig/CMakeLists.txt.orig	2015-01-23 20:32:03.872480117 +0100
-+++ discrover-1.5.0/CMakeLists.txt	2015-01-23 20:32:16.798939536 +0100
-@@ -290,7 +290,7 @@
+--- discrover-1.5.2.orig/CMakeLists.txt
++++ discrover-1.5.2/CMakeLists.txt
+@@ -295,7 +295,7 @@ ENDIF()
+ 
  SET(MANUAL_LOCATION "not installed")
  IF(BUILD_MANUAL)
-   SET(MANUAL_DIR "${CMAKE_INSTALL_PREFIX}/share/doc/${PROJECT_NAME}")
--  SET(MANUAL_LOCATION "${MANUAL_DIR}/discrover-manual.pdf")
-+  SET(MANUAL_LOCATION "${MANUAL_DIR}/discrover-manual.pdf.gz")
+-  SET(MANUAL_LOCATION "${DOC_DIR}/discrover-manual.pdf")
++  SET(MANUAL_LOCATION "${DOC_DIR}/discrover-manual.pdf.gz")
  ENDIF()
  
  ADD_SUBDIRECTORY(src)
