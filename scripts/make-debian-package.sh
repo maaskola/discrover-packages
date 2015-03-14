@@ -17,11 +17,11 @@ export VERSION=`git describe | sed -e "s/-/./g"`
 echo $VERSION
 export PACKAGE_VERSION=$VERSION-$1
 
-ruby $DIR/scripts/make-source-release.rb $DIR/deb/discrover_$VERSION.tar.gz
+export ARCHIVE=$DIR/deb/discrover_$VERSION.orig.tar.gz
+ruby $DIR/scripts/make-source-release.rb $ARCHIVE
 
 cd $DIR/deb
-cp discrover_$VERSION.tar.gz discrover_$VERSION.orig.tar.gz
-tar xf discrover_$VERSION.orig.tar.gz 
+tar xf $ARCHIVE
 
 # the debian directory contains some necessary files
 cp -r debian/ discrover-$VERSION/
